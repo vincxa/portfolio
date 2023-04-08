@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face{
+    font-family: first;
+    src: url(../fonts/download);
+}
+@font-face{
+    font-family: second;
+    src: url(../fonts/download\ \(1\));
+}
+header{
+    background-image: url(../img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+.heading{
+    display: flex;
+    justify-content: space-between;
+    font-family: first;
+    position: sticky;
+    top: 0;
+}
+.heading div{
+    margin: 15px 30px ;
+    
+}
+h1{
+    transition: ease-in-out 0.3s;
+}
+h1 a{
+    color: white;
+    font-size: 46px;
+    letter-spacing: 4px;
+    
+}
+.h1{
+    margin-top: -2px;
+    font-size: 30px;
+    color: #5918df;
+    text-align: center;
+    vertical-align: 6px;
+    height: 100%;
+}
+h1:hover{ 
+    transform: scale(1.1);
+}
+nav{
+    width: 450px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a{
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(110, 108, 108);
+    font-family: second;
+    transition: ease-in-out 0.3s;
+}
+nav ul li a:hover{
+    color: rgb(153, 153, 153);
+}
+.active{
+    color: white ;
+}
+.active:hover{
+    color: white;
+}
+.headerspan{
+    font-size: 22px;
+    font-weight: 900;
+    font-family: first;
+    margin: 2px;
+    color: rgb(52, 52, 52);
+}
+.purpleline{
+    top: 240px;
+    left: 270px;
+    position: absolute;
+    width: 1px;
+    height: 300%;
+    background-color: #5918df;
+}
+.bullet{
+    
+    left: 266px;
+    top: 234px;
+    /* z-index: 10; */
+    width: 9px;
+    position: absolute;
+    height: 9px;
+    border-radius: 50%;
+    border: 2px solid #5918df;
+    background-color: #1b191e;
+}
+.start{
+    width: fit-content;
+    justify-self: center;
+    top: 144px;
+    left: 300px;
+    position: relative;
+}
+.start a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(110, 108, 108);
+    font-family: second;
+    transition: 0.3s ease-in-out;
+}
+.startspan{
+    font-size: 16px;
+    font-weight: 900;
+    font-family: first;
+    margin: 2px;
+    color: rgb(52, 52, 52);
+}
+.scroll{
+    width: fit-content;
+    position: absolute;
+    top: 600px;
+    left: 264px;
+    /* background-color: wheat; */
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.scroll:hover{
+    transform: scale(1.1);
+}
+.scrul{
+    position: absolute;
+    /* margin-top: 26px;
+    margin-left: -23px; */
+    top: 50px;
+    left: -23px;
+    transform: rotate(-90deg);
+    overflow: hidden;
+    color: #5918df;
+    background-color: #1b191e;
+    border: #1b191e solid 4px;
+    border-radius: 14px;
+    box-shadow: #1b191e 2px;
+    cursor: pointer;
+}
+
+.scrul span{
+    font-size: 16px;
+    font-family: second;  
+}
+.introducing{
+    width: fit-content;
+    justify-self: center;
+    top: 210px;
+    left: 300px;
+    position: relative;
+}
+.firstandlastname{
+    width: fit-content;
+    top: 250px;
+    font-family: second;
+    color: white;
+}
+.mynameh2{
+    font-size: 40px;
+}
+.mynameh2 span{
+    margin: 20px 20px;
+    color: #5918df;
+    font-size: 40px;
+    z-index: 1;
+}
+.developer{
+    width: fit-content;
+    top: 250px;
+    font-family: second;
+    color: white;
+}
+.developerh2{
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+}
+#text{
+    margin: 20px 20px;
+    color: #5918df;
+    font-size: 40px;
+    transition: all 0.5s ease-in-out;
+}
+#text.fade-out {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
